@@ -1,0 +1,124 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= ACCDET.kl
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/usr/keylayout
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= audio_policy.conf
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= fstab.mt6572
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= hid-keyboard.idc
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/usr/idc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= hid-keyboard.kcm
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/usr/keychars
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= hid-keyboard.kl
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/usr/keylayout
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.modem.rc
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.mt6572.rc
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.mt6572.usb.rc
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.protect.rc
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= media_codecs.xml
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= mtk-kpd.kl
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/usr/keylayout
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= partition_permission.sh
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= ueventd.mt6572.rc
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= vold.fstab
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= configs/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+# include the non-open-source counterpart to this file
+-include vendor/advan/mt6572-common/AndroidBoardVendor.mk
